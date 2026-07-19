@@ -1,0 +1,6 @@
+{
+  "strategy_id": "ema_v1",
+  "version": "1.0.0",
+  "_comment": "TODO Phase 5 — terjemahkan penuh dari docs/Strategy-Specification.md §4",
+  "rules": []
+}

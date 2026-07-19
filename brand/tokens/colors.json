@@ -1,0 +1,19 @@
+{
+  "_comment": "Extract dari brand-guide.pdf. Isi hex code aktual di sini, lalu import ke apps/web/tailwind.config.js",
+  "primary": "#000000",
+  "secondary": "#000000",
+  "background": {
+    "dark": "#0a0a0a",
+    "light": "#ffffff"
+  },
+  "semantic": {
+    "success": "#00c853",
+    "danger": "#ff3b30",
+    "warning": "#ffb020",
+    "info": "#2f80ed"
+  },
+  "text": {
+    "primary": "#f5f5f5",
+    "secondary": "#a0a0a0"
+  }
+}
