@@ -1,5 +1,8 @@
-"""swing.py — TODO Phase 3. Lihat docs/Strategy-Specification.md untuk definisi."""
+from .base import Indicator
+from typing import Any, Dict, List
+from packages.shared.types import NormalizedCandle
 
 
-def compute(*args, **kwargs):
-    raise NotImplementedError("Diimplementasikan di Roadmap Phase 3")
+class SwingIndicator(Indicator):
+    def compute(self, candles: List[NormalizedCandle], params: Dict[str, Any]) -> Any:
+        raise NotImplementedError("Diimplementasikan di Roadmap Phase 3")

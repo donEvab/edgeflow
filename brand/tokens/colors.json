@@ -1,5 +1,4 @@
 {
-  "_comment": "Diambil via pixel-sampling langsung dari EdgeFlow-Logo.png (brand reference) dan icon PNG asli di brand/png/. Verifikasi ulang di Figma kalau butuh presisi 100% (sampling dari raster PNG bisa geser 1-2 nilai RGB akibat anti-aliasing/kompresi).",
   "primary": {
     "gradient_start": "#a855f7",
     "gradient_end": "#6d28d9",

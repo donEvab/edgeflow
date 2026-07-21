@@ -14,12 +14,12 @@ Prinsip pengerjaan: **coding berdasarkan dependency, bukan kalender.** Urutan di
 **Prasyarat sebelum baris kode pertama**
 
 - [x] Strategy Specification Document v1.0 *(selesai — lihat `EdgeFlow-Strategy-Specification-v1.0.md`)*
-- [ ] Product Requirement Document (PRD)
-- [ ] System Architecture Document (diagram + ADR/Architecture Decision Record)
-- [ ] Database schema (ERD)
-- [ ] API Specification (OpenAPI/Swagger)
-- [ ] UI/UX wireframe (dashboard, checklist view, journal, analytics)
-- [ ] Branding EdgeFlow (logo, tone, landing page copy)
+- [x] Product Requirement Document (PRD)
+- [x] System Architecture Document (diagram + ADR/Architecture Decision Record)
+- [x] Database schema (ERD)
+- [x] API Specification (OpenAPI/Swagger)
+- [x] UI/UX wireframe (dashboard, checklist view, journal, analytics)
+- [x] Branding EdgeFlow (logo, tone, landing page copy)
 
 **Repository & tooling (Week 1):**
 ```

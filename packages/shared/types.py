@@ -1,9 +1,5 @@
-"""
-Type definitions bersama, mengikuti kontrak di docs/Architecture.md.
-"""
-
-from dataclasses import dataclass
-from typing import Literal, Optional
+from dataclasses import dataclass, field
+from typing import Literal, Optional, List, Dict, Any
 
 
 @dataclass
@@ -21,15 +17,47 @@ class NormalizedCandle:
 
 
 @dataclass
+class RuleResult:
+    rule_id: str
+    passed: bool
+    reason: Optional[str] = None
+    score_contribution: int = 0
+
+
+@dataclass
 class SignalCandidate:
     strategy_id: str
-    version: str
-    market: str
+    strategy_version: str
+    market: Literal["crypto", "forex"]
     symbol: str
     direction: Literal["BUY", "SELL"]
-    score: int
-    recommendation: str
-    entry_zone: float
-    stop_loss: float
-    take_profit: float
-    timestamp: str
+    checklist: List[RuleResult] = field(default_factory=list)
+    score: int = 0
+    recommendation: str = ""
+    entry_zone: Optional[float] = None
+    stop_loss: Optional[float] = None
+    take_profit: Optional[float] = None
+    timestamp: str = ""
+
+
+@dataclass
+class DisciplineCheckResult:
+    allowed: bool
+    reason: Optional[str] = None
+    locked_until: Optional[str] = None
+
+
+@dataclass
+class RiskCalculation:
+    lot_size: float
+    risk_amount: float
+    potential_profit: float
+    max_drawdown: float
+
+
+@dataclass
+class OrderResult:
+    order_id: str
+    status: Literal["filled", "pending", "rejected"]
+    filled_price: Optional[float] = None
+    message: Optional[str] = None
