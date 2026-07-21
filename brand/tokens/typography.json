@@ -1,9 +1,9 @@
 {
-  "_comment": "Extract dari brand-guide.pdf. Isi font family & scale aktual di sini.",
+  "_comment": "Nama font TIDAK bisa diekstrak dari raster image/PNG — font rendering di gambar cuma berupa pixel, bukan metadata font. Cek nama font asli di Figma: klik teks 'EdgeFlow' dan tagline, lihat panel kanan Figma (Text > Font family). Isi field di bawah ini, lalu hapus _comment ini.",
   "fontFamily": {
-    "heading": "Inter, sans-serif",
-    "body": "Inter, sans-serif",
-    "mono": "JetBrains Mono, monospace"
+    "heading": "REPLACE_ME — cek di Figma",
+    "body": "REPLACE_ME — cek di Figma",
+    "tagline": "REPLACE_ME — cek di Figma, kemungkinan sama dengan body tapi letter-spacing lebih lebar (uppercase tracking terlihat di 'TRADE WITH RULES, NOT EMOTIONS.')"
   },
   "fontSize": {
     "xs": "0.75rem",

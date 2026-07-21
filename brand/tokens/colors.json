@@ -1,19 +1,24 @@
 {
-  "_comment": "Extract dari brand-guide.pdf. Isi hex code aktual di sini, lalu import ke apps/web/tailwind.config.js",
-  "primary": "#000000",
-  "secondary": "#000000",
+  "_comment": "Diambil via pixel-sampling langsung dari EdgeFlow-Logo.png (brand reference) dan icon PNG asli di brand/png/. Verifikasi ulang di Figma kalau butuh presisi 100% (sampling dari raster PNG bisa geser 1-2 nilai RGB akibat anti-aliasing/kompresi).",
+  "primary": {
+    "gradient_start": "#a855f7",
+    "gradient_end": "#6d28d9",
+    "accent": "#8b5cf6"
+  },
   "background": {
-    "dark": "#0a0a0a",
-    "light": "#ffffff"
+    "dark": "#0a0b10",
+    "light": "#f3f4f5"
+  },
+  "text": {
+    "dark_mode_primary": "#f6f6f6",
+    "dark_mode_accent": "#9c50f3",
+    "light_mode_primary": "#101010",
+    "light_mode_secondary": "#6b7280"
   },
   "semantic": {
     "success": "#00c853",
     "danger": "#ff3b30",
     "warning": "#ffb020",
     "info": "#2f80ed"
-  },
-  "text": {
-    "primary": "#f5f5f5",
-    "secondary": "#a0a0a0"
   }
 }
